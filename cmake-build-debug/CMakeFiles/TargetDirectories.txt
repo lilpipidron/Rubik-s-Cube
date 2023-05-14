@@ -1,0 +1,3 @@
+/home/vadim/Рабочий стол/Rubik-s-Cube/cmake-build-debug/CMakeFiles/Rubik-s-Cube.dir
+/home/vadim/Рабочий стол/Rubik-s-Cube/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vadim/Рабочий стол/Rubik-s-Cube/cmake-build-debug/CMakeFiles/rebuild_cache.dir
