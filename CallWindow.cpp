@@ -31,7 +31,13 @@ void CallWindow::display()  {
     // Other Transformations
     // glScalef( 2.0, 2.0, 0.0 );          // Not included
     drawFromConsist();
+
     allWhite();
+    allYellow();
+    allBlue();
+    allGreen();
+    allRed();
+    allOrange();
 
     glFlush();
     glutSwapBuffers();
