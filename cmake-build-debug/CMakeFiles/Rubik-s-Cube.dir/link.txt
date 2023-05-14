@@ -1,1 +1,1 @@
-/usr/bin/c++ -g "CMakeFiles/Rubik-s-Cube.dir/main.cpp.o" "CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o" -o Rubik-s-Cube  /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so /usr/lib/libglfw.so.3.3 -lGLEW -lglut 
+/usr/bin/c++ -g "CMakeFiles/Rubik-s-Cube.dir/main.cpp.o" "CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o" "CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o" -o Rubik-s-Cube  /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so /usr/lib/libglfw.so.3.3 -lGLEW -lglut 

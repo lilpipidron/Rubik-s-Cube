@@ -153,6 +153,30 @@ CallWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rubik-s-Cube.dir/build.make CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.s
 .PHONY : CallWindow.cpp.s
 
+Cube.o: Cube.cpp.o
+.PHONY : Cube.o
+
+# target to build an object file
+Cube.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rubik-s-Cube.dir/build.make CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o
+.PHONY : Cube.cpp.o
+
+Cube.i: Cube.cpp.i
+.PHONY : Cube.i
+
+# target to preprocess a source file
+Cube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rubik-s-Cube.dir/build.make CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.i
+.PHONY : Cube.cpp.i
+
+Cube.s: Cube.cpp.s
+.PHONY : Cube.s
+
+# target to generate assembly for a file
+Cube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rubik-s-Cube.dir/build.make CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.s
+.PHONY : Cube.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... CallWindow.o"
 	@echo "... CallWindow.i"
 	@echo "... CallWindow.s"
+	@echo "... Cube.o"
+	@echo "... Cube.i"
+	@echo "... Cube.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

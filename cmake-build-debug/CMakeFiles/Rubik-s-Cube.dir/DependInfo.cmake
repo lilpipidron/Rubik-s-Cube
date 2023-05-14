@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vadim/Рабочий стол/Rubik-s-Cube/CallWindow.cpp" "CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o" "gcc" "CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o.d"
+  "/home/vadim/Рабочий стол/Rubik-s-Cube/Cube.cpp" "CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o" "gcc" "CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o.d"
   "/home/vadim/Рабочий стол/Rubik-s-Cube/main.cpp" "CMakeFiles/Rubik-s-Cube.dir/main.cpp.o" "gcc" "CMakeFiles/Rubik-s-Cube.dir/main.cpp.o.d"
   )
 

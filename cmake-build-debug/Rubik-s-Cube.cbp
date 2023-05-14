@@ -88,6 +88,12 @@
 		<Unit filename="/home/vadim/Рабочий стол/Rubik-s-Cube/CallWindow.h">
 			<Option target="Rubik-s-Cube"/>
 		</Unit>
+		<Unit filename="/home/vadim/Рабочий стол/Rubik-s-Cube/Cube.cpp">
+			<Option target="Rubik-s-Cube"/>
+		</Unit>
+		<Unit filename="/home/vadim/Рабочий стол/Rubik-s-Cube/Cube.h">
+			<Option target="Rubik-s-Cube"/>
+		</Unit>
 		<Unit filename="/home/vadim/Рабочий стол/Rubik-s-Cube/drawCubes.h">
 			<Option target="Rubik-s-Cube"/>
 		</Unit>

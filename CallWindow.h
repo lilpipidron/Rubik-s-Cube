@@ -1,6 +1,8 @@
 //
 // Created by vadim on 14.05.23.
 //
+#pragma once
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -8,16 +10,21 @@
 #include <ctime>
 #include <cstdlib>
 #include <GL/freeglut.h>
-#ifndef CUBE_CALLWINDOW_H
-#define CUBE_CALLWINDOW_H
+#include "Cube.h"
+
+
+#ifndef RUBIK_S_CUBE_CALLWINDOW_H
+#define RUBIK_S_CUBE_CALLWINDOW_H
 
 
 class CallWindow {
 private:
     int argc;
     char** argv;
+    static Cube cube;
 public:
-    CallWindow(int argc, char** argv);
+    CallWindow(int argc, char** argv,Cube cuber);
+    ~CallWindow() = default;
     static void display();
     static void init();
     void startWindow();
@@ -25,4 +32,4 @@ public:
 };
 
 
-#endif //CUBE_CALLWINDOW_H
+#endif //RUBIK_S_CUBE_CALLWINDOW_H

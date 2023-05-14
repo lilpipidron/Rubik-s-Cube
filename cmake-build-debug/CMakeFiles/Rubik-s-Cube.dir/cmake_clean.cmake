@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o"
   "CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o.d"
+  "CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o"
+  "CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o.d"
   "CMakeFiles/Rubik-s-Cube.dir/main.cpp.o"
   "CMakeFiles/Rubik-s-Cube.dir/main.cpp.o.d"
   "Rubik-s-Cube"

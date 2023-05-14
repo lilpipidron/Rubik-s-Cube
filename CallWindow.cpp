@@ -4,11 +4,15 @@
 
 #include "CallWindow.h"
 #include "drawCubes.h"
+#include "Cube.h"
 GLfloat rotate_x = 0;
 GLfloat rotate_y  = 0;
-CallWindow::CallWindow(int argc, char **argv) {
+Cube CallWindow::cube;
+
+CallWindow::CallWindow(int argc, char **argv, Cube cuber) {
     this -> argc = argc;
     this -> argv = argv;
+    CallWindow::cube = cuber;
 
 }
 
@@ -20,24 +24,13 @@ void CallWindow::display()  {
     // Reset transformations
     glLoadIdentity();
 
-    // Other Transformations
-    // glTranslatef( 0.1, 0.0, 0.0 );      // Not included
-    // glRotatef( 180, 0.0, 1.0, 0.0 );    // Not included
 
     // Rotate when user changes rotate_x and rotate_y
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
 
-    // Other Transformations
-    // glScalef( 2.0, 2.0, 0.0 );          // Not included
-    drawFromConsist();
 
-    allWhite();
-    allYellow();
-    allBlue();
-    allGreen();
-    allRed();
-    allOrange();
+    drawFromConsist(cube);
 
     glFlush();
     glutSwapBuffers();
@@ -65,7 +58,6 @@ void CallWindow::specialKeys( int key, int x, int y ) {
 
     //  Request display update
     glutPostRedisplay();
-
 
 }
 

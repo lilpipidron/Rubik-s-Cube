@@ -1,7 +1,8 @@
 #include "CallWindow.h"
-
+#include "Cube.h"
 int main(int argc, char** argv) {
-    CallWindow window(argc,argv);
+    Cube cube;
+    CallWindow window(argc,argv, cube);
     window.startWindow();
     return 0;
 }
