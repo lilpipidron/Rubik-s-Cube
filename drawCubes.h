@@ -54,22 +54,22 @@ void drawFromConsist(Cube cube) {
     glVertex3f(-0.5, 0.49, -0.5);
     glEnd();
 
-    for (int j = 0; j < 3; ++j)
-        for (int i = 0; i < 3; ++i) {
+    for (int i = 0; i < 3; ++i)
+        for (int j = 0; j < 3; ++j) {
             glBegin(GL_POLYGON);
             glColor3f(cube.front[i][j].r, cube.front[i][j].g, cube.front[i][j].b);
-            glVertex3f(-0.5 + i * 0.34, 0.5 - j * 0.34, -0.5);
-            glVertex3f(-0.5 + i * 0.34, 0.18 - j * 0.34, -0.5);
-            glVertex3f(-0.18 + i * 0.34, 0.18 - j * 0.34, -0.5);
-            glVertex3f(-0.18 + i * 0.34, 0.5 - j * 0.34, -0.5);
+            glVertex3f(-0.5 + j * 0.34, 0.5 - i * 0.34, -0.5);
+            glVertex3f(-0.5 + j * 0.34, 0.18 - i * 0.34, -0.5);
+            glVertex3f(-0.18 + j * 0.34, 0.18 - i * 0.34, -0.5);
+            glVertex3f(-0.18 + j * 0.34, 0.5 - i * 0.34, -0.5);
             glEnd();
 
             glBegin(GL_POLYGON);
             glColor3f(cube.back[i][j].r, cube.back[i][j].g, cube.back[i][j].b);
-            glVertex3f(-0.5 + i * 0.34, 0.5 - j * 0.34, 0.5);
-            glVertex3f(-0.5 + i * 0.34, 0.18 - j * 0.34, 0.5);
-            glVertex3f(-0.18 + i * 0.34, 0.18 - j * 0.34, 0.5);
-            glVertex3f(-0.18 + i * 0.34, 0.5 - j * 0.34, 0.5);
+            glVertex3f(-0.5 + j * 0.34, 0.5 - i * 0.34, 0.5);
+            glVertex3f(-0.5 + j * 0.34, 0.18 - i * 0.34, 0.5);
+            glVertex3f(-0.18 + j * 0.34, 0.18 - i * 0.34, 0.5);
+            glVertex3f(-0.18 + j * 0.34, 0.5 - i * 0.34, 0.5);
             glEnd();
 
             glBegin(GL_POLYGON);
@@ -81,7 +81,7 @@ void drawFromConsist(Cube cube) {
             glEnd();
 
             glBegin(GL_POLYGON);
-            glColor3f(cube.right[i][j].r, cube.left[i][j].g, cube.left[i][j].b);
+            glColor3f(cube.right[i][j].r, cube.right[i][j].g, cube.right[i][j].b);
             glVertex3f(-0.5, -0.5 + i * 0.34, -0.5 + j * 0.34);
             glVertex3f(-0.5, -0.5 + i * 0.34, -0.18 + j * 0.34);
             glVertex3f(-0.5, -0.18 + i * 0.34, -0.18 + j * 0.34);

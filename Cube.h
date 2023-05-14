@@ -44,7 +44,8 @@ public:
     void R_();
     void U_();
     void D_();
-
+    void rotateBF(int j);
+    void rotateLR(int j);
 };
 
 

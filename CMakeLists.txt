@@ -3,7 +3,7 @@ project(Rubik-s-Cube)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Rubik-s-Cube main.cpp CallWindow.cpp CallWindow.h drawCubes.h Cube.cpp Cube.h)
+add_executable(Rubik-s-Cube main.cpp CallWindow.cpp CallWindow.h drawCubes.h Cube.cpp Cube.h Cube.cpp)
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
