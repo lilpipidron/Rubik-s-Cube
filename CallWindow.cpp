@@ -5,10 +5,86 @@
 #include "CallWindow.h"
 #include "drawCubes.h"
 #include "Cube.h"
+#include <unistd.h>
+
 
 GLfloat rotate_x = 0;
 GLfloat rotate_y = 0;
 Cube CallWindow::cube;
+
+
+void CallWindow::Randomise(){
+    srand(time(nullptr));
+    int operation;
+    for (int i = 0; i < 20; ++i){
+        operation = rand() % 12;
+        switch (operation) {
+            case 1:
+                cube.U();
+                break;
+            case 2:
+                cube.D();
+                break;
+            case 3:
+                cube.U_();
+                break;
+            case 4:
+                cube.F();
+                break;
+            case 5:
+                cube.D_();
+                break;
+            case 6:
+                cube.F_();
+                break;
+            case 7:
+                cube.R();
+                break;
+            case 8:
+                cube.R_();
+                break;
+            case 9:
+                cube.L_();
+                break;
+            case 10:
+                cube.B();
+                break;
+            case 11:
+                cube.B_();
+                break;
+            case 0:
+                cube.L();
+                break;
+        }
+    }
+    glutPostRedisplay();
+
+}
+
+void CallWindow::processMenu (int value) {
+    switch(value) {
+        case 1:
+            Randomise();
+            break;
+        case 2:
+            //Solve(cube);
+            break;
+    }
+}
+
+
+
+void CallWindow::createGLUTMenu () {
+    glutCreateMenu(processMenu);
+
+    glutAddMenuEntry("Randomise", 1);
+    glutAddMenuEntry("Solve", 2);
+
+    glutAttachMenu(GLUT_RIGHT_BUTTON);
+}
+
+
+
 
 CallWindow::CallWindow(int argc, char **argv, Cube cuber) {
     this->argc = argc;
@@ -89,6 +165,8 @@ void CallWindow::init() {
     glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0);
 }
 
+
+
 void CallWindow::startWindow() {
     glutInit(&argc, argv);
 
@@ -104,7 +182,7 @@ void CallWindow::startWindow() {
     // Callback functions
     glutDisplayFunc(display);
     glutSpecialFunc(specialKeys);
-    //  Pass control to GLUT for events
+    createGLUTMenu();
     glutMainLoop();
 }
 

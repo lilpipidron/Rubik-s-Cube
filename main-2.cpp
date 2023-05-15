@@ -475,8 +475,7 @@ public:
                         else {
                             RR();
                         }
-                    }a
-                    else if (spin[1] == 'L') {
+                    } else if (spin[1] == 'L') {
                         if (spin[2] == 'b') {
                             RLb();
                         }

@@ -6,54 +6,8 @@
 #define RUBIK_S_CUBE_DRAWCUBES_H
 
 void drawFromConsist(Cube cube) {
-    glBegin(GL_POLYGON);
-    glColor3f(0.0, 0.0, 0.0);
-    glVertex3f(0.5, -0.5, -0.49);
-    glVertex3f(0.5, 0.5, -0.49);
-    glVertex3f(-0.5, 0.5, -0.49);
-    glVertex3f(-0.5, -0.5, -0.49);
-    glEnd();
-
-    glBegin(GL_POLYGON);
     glColor3f(0, 0, 0);
-    glVertex3f(0.5, -0.5, 0.49);
-    glVertex3f(0.5, 0.5, 0.49);
-    glVertex3f(-0.5, 0.5, 0.49);
-    glVertex3f(-0.5, -0.5, 0.49);
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    glColor3f(0.0, 0.0, 0.0);
-    glVertex3f(0.49, -0.5, -0.5);
-    glVertex3f(0.49, 0.5, -0.5);
-    glVertex3f(0.49, 0.5, 0.5);
-    glVertex3f(0.49, -0.5, 0.5);
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    glColor3f(0.0, 0.0, 0.0);
-    glVertex3f(-0.49, -0.5, -0.5);
-    glVertex3f(-0.49, 0.5, -0.5);
-    glVertex3f(-0.49, 0.5, 0.5);
-    glVertex3f(-0.49, -0.5, 0.5);
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    glColor3f(0.0, 0.0, 0.0);
-    glVertex3f(0.5, -0.49, -0.5);
-    glVertex3f(0.5, -0.49, 0.5);
-    glVertex3f(-0.5, -0.49, 0.5);
-    glVertex3f(-0.5, -0.49, -0.5);
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    glColor3f(0.0, 0.0, 0.0);
-    glVertex3f(0.5, 0.49, -0.5);
-    glVertex3f(0.5, 0.49, 0.5);
-    glVertex3f(-0.5, 0.49, 0.5);
-    glVertex3f(-0.5, 0.49, -0.5);
-    glEnd();
-
+    glutSolidCube(0.99);
     for (int i = 0; i < 3; ++i)
         for (int j = 0; j < 3; ++j) {
             glBegin(GL_POLYGON);

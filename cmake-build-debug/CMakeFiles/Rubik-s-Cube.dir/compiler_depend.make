@@ -216,7 +216,15 @@ CMakeFiles/Rubik-s-Cube.dir/CallWindow.cpp.o: /home/vadim/Рабочий\ сто
   /usr/include/GL/freeglut_ext.h \
   /usr/include/GL/freeglut_ucall.h \
   /home/vadim/Рабочий\ стол/Rubik-s-Cube/Cube.h \
-  /home/vadim/Рабочий\ стол/Rubik-s-Cube/drawCubes.h
+  /home/vadim/Рабочий\ стол/Rubik-s-Cube/drawCubes.h \
+  /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h
 
 CMakeFiles/Rubik-s-Cube.dir/Cube.cpp.o: /home/vadim/Рабочий\ стол/Rubik-s-Cube/Cube.cpp \
   /usr/include/stdc-predef.h \
@@ -652,6 +660,14 @@ CMakeFiles/Rubik-s-Cube.dir/main.cpp.o: /home/vadim/Рабочий\ стол/Rub
 
 /home/vadim/Рабочий\ стол/Rubik-s-Cube/main.cpp:
 
+/usr/include/bits/unistd_ext.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/confname.h:
+
 /home/vadim/Рабочий\ стол/Rubik-s-Cube/Cube.h:
 
 /usr/include/GL/glu.h:
@@ -738,6 +754,8 @@ CMakeFiles/Rubik-s-Cube.dir/main.cpp.o: /home/vadim/Рабочий\ стол/Rub
 
 /usr/include/c++/12.2.1/debug/assertions.h:
 
+/usr/include/bits/environments.h:
+
 /usr/include/c++/12.2.1/bits/concept_check.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.1/include/stdarg.h:
@@ -783,6 +801,8 @@ CMakeFiles/Rubik-s-Cube.dir/main.cpp.o: /home/vadim/Рабочий\ стол/Rub
 /usr/include/c++/12.2.1/ext/string_conversions.h:
 
 /usr/include/c++/12.2.1/typeinfo:
+
+/usr/include/unistd.h:
 
 /usr/include/c++/12.2.1/bits/cxxabi_init_exception.h:
 
@@ -833,6 +853,8 @@ CMakeFiles/Rubik-s-Cube.dir/main.cpp.o: /home/vadim/Рабочий\ стол/Rub
 /usr/include/c++/12.2.1/iostream:
 
 /usr/include/bits/locale.h:
+
+/usr/include/linux/close_range.h:
 
 /usr/include/c++/12.2.1/cstring:
 
@@ -919,6 +941,8 @@ CMakeFiles/Rubik-s-Cube.dir/main.cpp.o: /home/vadim/Рабочий\ стол/Rub
 /usr/include/c++/12.2.1/cwchar:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/posix_opt.h:
 
 /usr/include/c++/12.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 

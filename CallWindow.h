@@ -29,6 +29,14 @@ public:
     static void init();
     void startWindow();
     static void specialKeys(int key, int x, int y);
+
+    void createGLUTMenu();
+
+    void processMenu(int value, Cube cube);
+
+    static void Randomise();
+
+    static void processMenu(int value);
 };
 
 
